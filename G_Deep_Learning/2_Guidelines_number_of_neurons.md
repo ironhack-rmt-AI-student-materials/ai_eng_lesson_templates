@@ -48,7 +48,7 @@ Choosing the number of layers and neurons is a combination of:
 ## Common patterns
 - Hidden layer widths (ie. number of neurons in hidden layers) are often powers of two (64, 128, 256, 512...), mostly for convenience and hardware efficiency (tends to work nicely with GPU memory layout and batching efficiency).
 - For tabular data, shallow models (including 2–5 hidden layers, or even non-neural methods like gradient-boosted trees) are often sufficient and commonly preferred.
-- For images and language, modern systems typically rely on large pretrained architectures rather than hand-designing layer counts; these models may have many layers internally, but in practice you select a pretrained variant instead of tuning depth yourself.
+- For images and language, transfer learning is commonly used: instead of building a neural network from scratch, you usually start with a pretrained model that has already learned useful patterns, and then adapt or fine-tune it for your specific task.
 
 
 ## Final notes
